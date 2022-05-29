@@ -1,0 +1,194 @@
+.organization .heading {
+    text-align: center;
+    margin-bottom: 44px;
+}
+.organization .bgd_text {
+    background-color: #fff;
+    margin: auto;
+    margin-bottom: 16px;
+}
+.organization .showcase_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+}
+.organization .container {
+    width: 640px;
+    margin: auto;
+    margin-top: 190px;
+    margin-bottom: 80px;
+}
+.organization .container p {
+    opacity: 1;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+.organization .container img {
+    margin-bottom: 40px;
+    width: 100%;
+    height: auto;
+}
+.organization .bottom_form {
+    position: relative;
+    text-align: center;
+    margin-bottom: 180px;
+}
+.organization .bottom_form .shape1 {
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    z-index: -1;
+}
+.organization .bottom_form .form_box {
+    margin: auto;
+    margin-top: 44px;
+}
+.organization .history {
+    position: relative;
+    text-align: center;
+    margin: 60px auto;
+    margin-bottom: 100px;
+}
+.organization .history .timeline {
+    margin: auto;
+}
+.organization .history .item {
+    position: absolute;
+    max-width: 400px;
+    font-size: 14px;
+}
+.organization .history .item .title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #377dff;
+}
+.organization .history .item .title span {
+    display: none;
+}
+.organization .history .item.left {
+    left: -10px;
+    text-align: right;
+}
+.organization .history .item.right {
+    right: -27px;
+
+    text-align: left;
+}
+.organization .history .item:nth-child(1) {
+    top: 7.85%;
+}
+.organization .history .item:nth-child(2) {
+    top: 27.5%;
+}
+.organization .history .item:nth-child(3) {
+    top: 47.2%;
+}
+.organization .history .item:nth-child(4) {
+    bottom: 17.5%;
+}
+.organization .history .item:nth-child(5) {
+    bottom: -2.5%;
+}
+.we_understand {
+    position: relative;
+    padding: 40px 0 90px 0;
+}
+.we_understand .background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    z-index: -1;
+}
+.we_understand .text {
+    max-width: 580px;
+}
+.we_understand .f35 {
+    margin-bottom: 20px;
+}
+.we_understand p {
+    margin-bottom: 15px;
+    opacity: 1;
+}
+
+@media screen and (max-width: 1300px) {
+    .organization .history .timeline {
+        width: 580px;
+    }
+    .organization .history .item .title {
+        font-size: 17px;
+        margin-bottom: 9px;
+    }
+    .organization .history .item {
+        max-width: 300px;
+        font-size: 13px;
+    }
+    .organization .history .item.right {
+        right: auto;
+        left: 50%;
+        transform: translateX(53%);
+    }
+    .organization .history .item.left {
+        left: auto;
+        right: 50%;
+        transform: translateX(-51%);
+    }
+    .organization .history .item:nth-child(4) {
+        bottom: 6.5%;
+    }
+    .organization .history .item:nth-child(5) {
+        bottom: -12.9%;
+    }
+    .organization .history {
+        margin-bottom: 228px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .organization .container {
+        width: 95%;
+        margin-top: 111px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .organization .history .timeline {
+        display: none;
+    }
+    .organization .history .item {
+        position: relative;
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+        bottom: auto !important;
+        transform: none !important;
+        text-align: left !important;
+        max-width: none;
+        margin-bottom: 20px;
+    }
+    .organization .history .item .title span {
+        display: inline;
+        font-size: 30px;
+    }
+    .organization .history {
+        margin-bottom: 77px;
+    }
+    .we_understand .wrapper {
+        flex-direction: column;
+    }
+    .we_understand .text {
+        max-width: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    .organization .container p {
+        margin-bottom: 18px;
+    }
+    .organization .heading {
+        margin-bottom: 26px;
+    }
+}

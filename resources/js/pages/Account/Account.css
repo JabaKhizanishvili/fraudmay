@@ -1,0 +1,329 @@
+.account {
+    background: url(/img/bgs/5.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    background-color: #fafbfc;
+}
+.account .wrapper {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.account .tabs {
+    border-right: 1px solid #c4cad4;
+    height: 100vh;
+    padding-top: 112px;
+    padding-right: 30px;
+}
+.account .tabs .hello {
+    margin-bottom: 80px;
+    font-size: 18px;
+}
+.account .tabs .hello span {
+    opacity: 0.5;
+    font-size: 14px;
+}
+.account .tab {
+    display: block;
+    color: #1c3447;
+    padding: 11px 0;
+    padding-right: 23px;
+    position: relative;
+    opacity: 0.3;
+}
+.account .tab span {
+    position: relative;
+    z-index: 100;
+}
+
+.account .tab.active {
+    opacity: 1;
+}
+
+.account .logout {
+    text-decoration: underline;
+    margin-top: 20px;
+}
+
+.account .content {
+    position: relative;
+    display: none;
+    margin-left: 45px;
+    width: 75%;
+    padding-top: 134px;
+    min-height: 100vh;
+}
+.account .content.active {
+    display: block;
+}
+.account .content label {
+    font-size: 14px;
+    opacity: 0.3;
+}
+.account .content input,
+.account .content select {
+}
+.account .content_box {
+    width: 594px;
+    padding: 70px 100px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px #0a17271a;
+}
+.account .content_box p {
+    margin-bottom: 34px;
+}
+.account .content input[type="file"] {
+    padding-top: 13px;
+    position: relative;
+}
+.account .content input[type="file"]::before {
+    content: "Choose file";
+    width: 90px;
+    height: 80%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 13px;
+    background-color: #eeeeee;
+    color: #172238;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+.dashboard {
+    position: relative;
+    height: 100%;
+}
+.dashboard .bgd_text {
+    margin-bottom: 50px;
+}
+.dashboard .title {
+    opacity: 0.3;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.currency_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    width: 76%;
+    margin-bottom: 43px;
+}
+.currency_box {
+    background-color: #e6ecf3;
+    border-radius: 8px;
+    height: 98px;
+    position: relative;
+    padding: 13px 15px;
+    background-position: right;
+}
+.currency_box .sign {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    line-height: 100%;
+}
+.dashboard .user {
+    margin-bottom: 25px;
+}
+.dashboard .user .img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.dashboard .user .user_info {
+    justify-content: flex-start;
+}
+.dashboard .user .name {
+    margin-top: 10px;
+}
+.dashboard .user p {
+    font-size: 13px;
+}
+.dashboard .manager {
+    width: 523px;
+    padding: 30px 35px;
+    background: linear-gradient(to right, #e6ecf3, transparent);
+    margin-top: 33px;
+    margin-bottom: 76px;
+    border-radius: 8px;
+}
+.dashboard .abs_img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.dashboard .verification .uppercase {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.dashboard .verification a {
+    color: #377dff;
+    text-decoration: underline;
+    line-height: 240%;
+}
+
+.dashboard .manager .head {
+    color: #a9afb6;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+}
+.dashboard .manager img {
+    margin-right: 10px;
+    margin-top: -4px;
+}
+
+.dashboard .flex.withdraw {
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-bottom: 65px;
+}
+.dashboard .flex.withdraw .span {
+    position: relative;
+    margin-left: 20px;
+}
+.dashboard .flex.withdraw .span::after {
+    content: "...";
+    font-size: 20px;
+    color: #377dff;
+    top: 25px;
+    left: -25px;
+    width: 20px;
+    height: 2px;
+}
+.dashboard .withdraw input,
+.dashboard .withdraw select {
+    width: 90px;
+    height: 40px;
+    background-color: #f7f8f8;
+    border-radius: 5px;
+    margin-right: 20px;
+    display: block;
+    border: navajowhite;
+}
+.dashboard .copy {
+    margin-left: 30px;
+    vertical-align: middle;
+}
+.edit_profile .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 22px 16px;
+}
+.edit_profile .grid .flex {
+    margin: auto;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+.edit_profile .grid .flex a:first-child {
+    margin-right: 10px;
+}
+.edit_profile .grid .flex a:first-child .main_button {
+    color: #172238;
+    background-color: #f7f8f8;
+}
+.edit_profile .title {
+    margin-bottom: 20px;
+}
+
+.change_password .main_button {
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+    .account .content {
+        margin-left: 45px;
+        width: 70%;
+    }
+    .currency_grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+    .account .tabs .hello {
+        margin-bottom: 28px;
+    }
+    .dashboard .manager {
+        width: 100%;
+        padding: 24px 22px;
+        margin-top: 21px;
+        margin-bottom: 59px;
+    }
+    .account .content_box {
+        width: 100%;
+        padding: 43px 45px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .account .content {
+        margin-left: 20px;
+    }
+    .edit_profile .grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 12px 16px;
+    }
+
+    .account .content input,
+    .account .content select {
+        height: 40px;
+        margin-top: 3px;
+    }
+    .account .content input[type="file"] {
+        padding-top: 13px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .dashboard .flex.withdraw {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 240px;
+        grid-gap: 20px 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    .account .wrapper {
+        flex-direction: column;
+    }
+    .account .content {
+        margin-left: 0;
+        margin-top: 40px;
+        width: 100%;
+        padding-top: 23px;
+    }
+    .dashboard b {
+        font-size: 12px;
+    }
+    .dashboard .copy {
+        margin-left: 10px;
+    }
+    .account .tabs {
+        border-bottom: 1px solid #c4cad4;
+        border-right: none;
+        height: auto;
+        width: 100%;
+        padding-top: 112px;
+        padding-bottom: 60px;
+        padding-right: 0;
+    }
+    .currency_grid {
+        width: 100%;
+    }
+    .account .tabs .hello {
+        margin-bottom: 15px;
+    }
+    .account .tab {
+        padding: 5px 0;
+        padding-right: 0;
+    }
+    .account .content_box {
+        padding: 43px 26px;
+    }
+}

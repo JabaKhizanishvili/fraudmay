@@ -1,0 +1,193 @@
+@font-face {
+    font-family: "poppins";
+    src: url(/fonts/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: "light";
+    src: url(/fonts/Poppins/Poppins-Regular.ttf);
+}
+*,
+*::after,
+*::before {
+    font-family: "poppins";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*::after,
+*::before {
+    position: absolute;
+    content: "";
+}
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #1c728f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #00bbffa9;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #00bdff;
+}
+
+html {
+    box-sizing: border-box;
+}
+body {
+    font-family: "poppins";
+    font-weight: 400;
+    line-height: 1.3;
+    color: #1c3447;
+    background: #fff;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+p {
+    font-weight: 100;
+    line-height: 1.5;
+    opacity: 0.5;
+}
+h1 {
+    font-weight: 600;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+input,
+textarea,
+button {
+    outline: none;
+    border: none;
+    background: none;
+}
+button {
+    cursor: pointer;
+}
+select {
+    border: none;
+    outline: none;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+.img {
+    overflow: hidden;
+}
+.img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
+.wrapper {
+    width: 1256px;
+    height: 100%;
+    margin: auto;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex.centered {
+    justify-content: center;
+}
+.main_button {
+    color: #fff;
+    background-color: #377dff;
+    padding: 11px 13px;
+    min-width: 100%;
+    transition: 0.3s;
+}
+.main_button.transparent {
+    background-color: transparent;
+    border: 2px solid #377dff;
+    color: #377dff;
+    padding: 9px 13px;
+}
+.main_button:hover {
+    transform: scale(0.95);
+}
+.f35 {
+    font-family: "light";
+    font-size: 35px;
+    line-height: 100%;
+}
+.f25 {
+    font-size: 25px;
+}
+.pages {
+    padding-top: 200px;
+}
+.bgd_text {
+    background-color: #eff5ff;
+    padding: 6px 15px;
+    width: fit-content;
+    border-radius: 7px;
+}
+input,
+textarea {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #e7e7e7;
+    padding-left: 16px;
+    margin-bottom: 18px;
+    background-color: #fff;
+}
+textarea {
+    padding-top: 13px;
+}
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1300px) {
+    .wrapper {
+        width: 95%;
+    }
+    .f35 {
+        font-size: 30px;
+    }
+    .f25 {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .pages {
+        padding-top: 120px;
+    }
+}
+@media screen and (max-width: 850px) {
+    body {
+        font-size: 14px;
+    }
+    .f35 {
+        font-size: 22px;
+    }
+    .f25 {
+        font-size: 18px;
+    }
+    .pages {
+        padding-top: 100px;
+    }
+}

@@ -1,0 +1,161 @@
+.finance_fraud {
+    padding-bottom: 77px;
+    position: relative;
+}
+.finance_fraud .background {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 61%;
+}
+.finance_fraud .wrapper {
+    align-items: flex-start;
+}
+.finance_fraud .left {
+    width: 50%;
+    margin-right: 100px;
+}
+.finance_fraud .right {
+    width: 50%;
+    text-align: right;
+}
+.finance_fraud .page_head {
+    position: relative;
+    width: fit-content;
+    padding: 22px 40px;
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+
+.finance_fraud .page_head .f35 {
+    position: relative;
+    z-index: 100;
+    color: #377dff;
+}
+.finance_fraud .page_head p {
+    position: relative;
+    z-index: 100;
+    margin-bottom: 0 !important;
+}
+.finance_fraud .left p {
+    padding-bottom: 30px;
+    text-align: justify;
+}
+.finance_fraud .next_page {
+    padding: 16px 0;
+    border: 1px solid #071e30;
+    width: 279px;
+    font-size: 20px;
+    color: #071e30;
+    transition: 0.4s;
+    margin-top: 20px;
+}
+.finance_fraud .next_page:hover {
+    background-color: rgba(255, 255, 255, 0.676);
+}
+.finance_fraud .next_page img {
+    margin-left: 10px;
+}
+.finance_fraud .right img {
+    margin-bottom: 30px;
+}
+
+/* regulations */
+.finance_fraud .form_section {
+    background: url(/img/bgs/3.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 35px 0;
+}
+.finance_fraud .form_section .form_box {
+    margin: auto;
+}
+.regulations .main {
+    position: relative;
+    align-items: flex-end;
+    margin-bottom: 200px;
+}
+.regulations .main .bgd_text {
+    margin-bottom: 16px;
+}
+.regulations .shape1 {
+    position: absolute;
+    max-width: none;
+    width: 100vw;
+    height: auto;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+.regulations .next_page {
+    background-color: #377dff;
+    padding: 20px 0;
+    width: 260px;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 16px;
+    border: 1px solid #377dff;
+}
+.regulations .next_page:hover {
+    background-color: #377dff;
+    box-shadow: 0 5px 15px #377dff4f;
+    transform: scale(0.96);
+}
+.regulations .next_page.reverse {
+    color: #377dff;
+    background-color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+    .finance_fraud .left {
+        width: 50%;
+        margin-right: 34px;
+    }
+    .finance_fraud .page_head::before {
+        width: 112%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .finance_fraud .wrapper {
+        flex-direction: column;
+    }
+    .finance_fraud .background {
+        width: 100%;
+    }
+    .finance_fraud .left {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    .finance_fraud .right {
+        width: 100%;
+        text-align: center;
+    }
+    .finance_fraud .right img {
+        width: auto;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .finance_fraud .page_head .f35 {
+        margin-top: 3px;
+    }
+    .regulations .shape1 {
+        bottom: auto;
+        top: 50px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .finance_fraud .next_page {
+        padding: 17px 0;
+        margin-top: 9px;
+        font-size: 16px;
+        width: 249px;
+    }
+    .finance_fraud .page_head {
+        padding: 15px 21px;
+        padding-left: 0;
+    }
+}

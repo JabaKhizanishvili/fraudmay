@@ -1,0 +1,35 @@
+.lang_switcher {
+    position: relative;
+    margin-left: 20px;
+}
+.lang_switcher .on {
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+}
+.lang_switcher img {
+    width: 25px;
+}
+.lang_switcher .drop {
+    position: absolute;
+    left: 1px;
+    padding-top: 5px;
+    transform-origin: top;
+    transform: scaleY(0.5);
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+.lang_switcher:hover .drop {
+    transform: scaleY(1);
+    top: 100%;
+    opacity: 1;
+    visibility: visible;
+}

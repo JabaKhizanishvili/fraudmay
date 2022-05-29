@@ -1,0 +1,38 @@
+.form {
+    text-align: right;
+    max-width: 418px;
+    margin: auto;
+    margin-right: 0;
+}
+.form p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.form input::placeholder,
+.form textarea::placeholder {
+    opacity: 0.5;
+}
+.form_box {
+    width: 357px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px #0a17271e;
+    overflow: hidden;
+}
+.form_box .img {
+    width: 100%;
+    height: auto;
+}
+.form_box .form {
+    padding: 35px;
+    padding-bottom: 50px;
+}
+
+@media screen and (max-width: 400px) {
+    .form_box {
+        width: 100%;
+    }
+    .form_box .form {
+        padding: 19px;
+    }
+}

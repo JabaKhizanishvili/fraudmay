@@ -1,0 +1,48 @@
+{
+    "menu": [
+        {
+            "url": "user.index",
+            "name": "user",
+            "i18n": "user",
+            "icon": "brightness_low",
+            "slug": "user"
+        },
+        {
+            "url": "language.index",
+            "name": "language",
+            "i18n": "language",
+            "icon": "language",
+            "slug": "language"
+        },
+        {
+            "url": "translation.index",
+            "name": "translation",
+            "i18n": "translation",
+            "icon": "g_translate",
+            "slug": "translation"
+        },
+        {
+            "url": "moderator.index",
+            "name": "moderator",
+            "i18n": "moderator",
+            "icon": "brightness_low",
+            "slug": "moderator"
+        },
+        {
+            "url": "change-password",
+            "name": "change_password",
+            "i18n": "change_password",
+            "icon": "brightness_low",
+            "slug": "change password"
+        }
+    ],
+    "_comment": [
+        {
+            "url": "setting.index",
+            "name": "setting",
+            "i18n": "setting",
+            "icon": "brightness_low",
+            "slug": "setting"
+        }
+    ]
+}
