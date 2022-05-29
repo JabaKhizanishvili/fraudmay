@@ -3818,10 +3818,10 @@ var VerifyProfile = function VerifyProfile() {
   var errors = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_3__.usePage)().props.errors;
 
   var _useForm2 = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_3__.useForm)({
-    // document_type: "",
-    document: "" // bank_statement: "",
-    // selfie_with_document: "",
-
+    user_document_type: "",
+    user_document: "",
+    user_bank_statement: "",
+    user_selfie_with_document: ""
   }),
       data = _useForm2.data,
       setData = _useForm2.setData,
@@ -3839,13 +3839,31 @@ var VerifyProfile = function VerifyProfile() {
     className: "content_box"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", {
     className: "",
-    onSubmit: submit
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+    onSubmit: submit,
+    enctype: "multipart/form-data"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    key: "document"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", null, __("document")), errors.document && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, errors.document), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
     type: "file",
     onChange: function onChange(e) {
-      return setData('document', e.target.files[0]);
+      return setData("user_document", e.target.files[0]);
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    key: "bank_statement"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", null, __("bank_statement")), errors.bank_statement && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, errors.bank_statement), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+    type: "file",
+    onChange: function onChange(e) {
+      return setData("user_bank_statement", e.target.files[0]);
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    key: "selfie_with_document"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", null, __("user_selfie_with_document")), errors.selfie_with_document && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, errors.selfie_with_document), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+    type: "file",
+    filename: data.selfie_with_document,
+    onChange: function onChange(e) {
+      return setData("selfie_with_document", e.target.files[0]);
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "flex"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Button_MainButton__WEBPACK_IMPORTED_MODULE_1__.MainButtonSubmit, {
     text: __("dashboard_save_changes_button")

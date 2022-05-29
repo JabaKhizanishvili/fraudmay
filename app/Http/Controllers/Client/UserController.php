@@ -111,24 +111,21 @@ class UserController extends Controller
 
     public function uploadDocuments(UploadDocumentRequest $request)
     {
-        dd($request->file());
         DB::beginTransaction();
-        if (!$request['document'] && !$request['bank_statement'] && !$request['selfie_with_document']) {
+        if (!$request['user_document'] && !$request['user_bank_statement'] && !$request['user_selfie_with_document']) {
             return redirect(locale_route('client.account.index'));
         }
         try {
 
             if ($request->hasFile('document')) {
-                $this->saveFile($request->file('document'), $request['document_type']);
+                $this->saveFile($request->file('user_document'), $request['user_document_type']);
             }
 
-            if ($request->hasFile('bank_statement')) {
-
-
+            if ($request->hasFile('user_bank_statement')) {
                 $this->saveFile($request->file('bank_statement'), File::BANK_STATEMENT);
             }
 
-            if ($request->hasFile('selfie_with_document')) {
+            if ($request->hasFile('user_selfie_with_document')) {
                 $this->saveFile($request->file('selfie_with_document'), File::SELFIE_WITH_DOCUMENT);
             }
 

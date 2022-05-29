@@ -272,10 +272,10 @@ export const VerifyProfile = () => {
     const { errors } = usePage().props;
 
     const { data, setData, post, progress } = useForm({
-        // document_type: "",
-        document: "",
-        // bank_statement: "",
-        // selfie_with_document: "",
+        user_document_type: "",
+        user_document: "",
+        user_bank_statement: "",
+        user_selfie_with_document: "",
     });
 
     function submit(e) {
@@ -295,14 +295,14 @@ export const VerifyProfile = () => {
                     <label htmlFor="driverslicense">Driver license</label>
                     <input type="radio" name="doc_type" id="driverslicense" />
                 </div> */}
-                <form className="" onSubmit={submit}>
-                    {/* <div key={"document"}>
+                <form className="" onSubmit={submit} enctype="multipart/form-data">
+                    <div key={"document"}>
                         <label>{__("document")}</label>
                         {errors.document && <div>{errors.document}</div>}
                         <input
                             type="file"
                             onChange={(e) =>
-                                setData("document", e.target.files[0])
+                                setData("user_document", e.target.files[0])
                             }
                         />
                     </div>
@@ -314,12 +314,12 @@ export const VerifyProfile = () => {
                         <input
                             type="file"
                             onChange={(e) =>
-                                setData("bank_statement", e.target.files[0])
+                                setData("user_bank_statement", e.target.files[0])
                             }
                         />
                     </div>
                     <div key={"selfie_with_document"}>
-                        <label>{__("selfie_with_document")}</label>
+                        <label>{__("user_selfie_with_document")}</label>
                         {errors.selfie_with_document && (
                             <div>{errors.selfie_with_document}</div>
                         )}
@@ -333,9 +333,7 @@ export const VerifyProfile = () => {
                                 )
                             }
                         />
-                    </div> */}
-
-                    <input type="file" onChange={e => setData('document', e.target.files[0])} />
+                    </div>
                     <div className="flex">
                         <MainButtonSubmit
                             text={__("dashboard_save_changes_button")}
